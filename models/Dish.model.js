@@ -1,11 +1,15 @@
 import mongoose from "mongoose";
 
-const dishSchema = mongoose.Schema({
-  name: String,
-  description: String,
-  price: Number,
-  image: String,
+const DishSchema = new mongoose.Schema({
+  name: { type: String, required: true },
+  price: { type: Number, required: true },
   category: String,
+  image: {
+    type: String,
+    default:
+      "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+  },
+  description: String,
 });
 
-export default mongoose.model("Dish", dishSchema);
+export default mongoose.model("Dish", DishSchema);
