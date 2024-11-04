@@ -147,4 +147,23 @@ router.delete("/deleteUserByEmail", async (req, res) => {
   }
 });
 
+router.post("/comfirm-order", async (req, res) => {
+  try {
+    const { email, order_id } = req.body;
+    const user = await UserModel.findOne({ email });
+    if (!user) {
+      return res.json({ status: 404, message: "User not found!" });
+    }
+    const order = await OrderModel.findOne({ order_id });
+    if (!order) {
+      return res.json({ status: 404, message: "Order not found!" });
+    }
+    await OrderModel.updateOne({ order_id }, { $set: { status: "confirmed" } });
+    res.json({ status: 200, message: "Order confirmed!" });
+  } catch (error) {
+    console.error("Error confirming order:", error);
+    res.json({ status: 500, message: "Error confirming order" });
+  }
+});
+
 export default router;
