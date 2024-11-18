@@ -5,6 +5,7 @@ import session from "express-session";
 import dishRoutes from "./routes/dish.routes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import userRoutes from "./routes/user.routes.js";
+import orderRoutes from "./routes/order.routes.js"
 
 
 const app = express();
@@ -30,6 +31,7 @@ mongoose
 
 // Routes
 app.use("/user", userRoutes);
+app.use("/order", orderRoutes);
 app.use("/dishes", dishRoutes);
 
 // Error handling middleware

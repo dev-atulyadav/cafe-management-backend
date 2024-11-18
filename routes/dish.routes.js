@@ -5,16 +5,22 @@ import UserModel from "../models/User.model.js";
 const router = express.Router();
 
 router.post("/addDish", async (req, res) => {
-  const { name, price, image, description } = req.body;
+  const { name, price, image, category, description } = req.body;
 
   if (!name || !price) {
     return res.status(400).json({ message: "Name and price are required." });
   }
 
   try {
-    const newDish = new DishModel({ name, price, image, description });
+    const newDish = new DishModel({
+      name,
+      price,
+      image,
+      category,
+      description,
+    });
     await newDish.save();
-    res.status(201).json({ message: "Dish added successfully" });
+    res.status(201).json({ message: "Dish added successfully", data: newDish });
   } catch (error) {
     console.error("Error adding dish:", error);
     res.status(500).json({ message: "Error adding dish" });
