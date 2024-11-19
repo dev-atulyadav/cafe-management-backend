@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import session from "express-session";
 import dishRoutes from "./routes/dish.routes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
+import adminRoutes from "./routes/admin.routes.js";
 import userRoutes from "./routes/user.routes.js";
 import orderRoutes from "./routes/order.routes.js"
 
@@ -30,6 +31,7 @@ mongoose
   .catch((error) => console.error("Error connecting to MongoDB:", error));
 
 // Routes
+app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
 app.use("/order", orderRoutes);
 app.use("/dishes", dishRoutes);
