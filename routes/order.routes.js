@@ -3,7 +3,6 @@ import UserModel from "../models/User.model.js";
 import DishModel from "../models/Dish.model.js";
 
 const router = express.Router();
-//not completed
 
 router.post("/add-order/:email/:dishId", async (req, res) => {
   const { email, dishId } = req.params;
@@ -24,24 +23,60 @@ router.post("/add-order/:email/:dishId", async (req, res) => {
         const minute = date.getMinutes();
         const second = date.getSeconds();
         const orderId = `${year}${month}${day}${hour}${minute}${second}`;
-
         totalPrice *= Number(dish.quantity);
         cart.splice(index, 1);
-        user.orders.push( {
+        user.orders.push({
           orderId: "DS10R" + orderId,
+          orderDate: new Date().toLocaleDateString(),
+          orderTiming: new Date().toLocaleTimeString(),
           dishId: dishId,
           quantity: dish.quantity,
           price: totalPrice,
           deliveryLocation: user.address,
-          orderStatus: "payment pending",
+          orderStatus: "payment-pending",
+          deliveryStatus: "not-delivered",
         });
       }
     });
+    user.save();
+    return res.json({
+      status: 200,
+      orders: user.orders,
+    });
   }
-  user.save();
   return res.json({
-    orders:user.orders,
+    status: 404,
+    message: "User not found.",
   });
 });
+
+router.post(
+  "/update-user-order-status/:email/:orderId/:orderStatus",
+  async (req, res) => {
+    const { email, orderId, orderStatus } = req.params;
+    const user = await UserModel.findOne({ email });
+    if (user) {
+      const order = user.orders.find((order) => order.orderId === orderId);
+      if (order) {
+        order.orderStatus = orderStatus;
+        user.markModified("orders");
+        user.save();
+        return res.json({
+          status: 200,
+          message: "Order status updated successfully",
+        });
+      } else {
+        return res.json({
+          status: 404,
+          message: "Order not found.",
+        });
+      }
+    }
+    return res.json({
+      status: 400,
+      message: "User not found.",
+    });
+  }
+);
 
 export default router;

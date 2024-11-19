@@ -55,11 +55,6 @@ router.post("/addToCart/:email", async (req, res) => {
   const { email } = req.params;
   const cart = req.body;
   const existingUser = await UserModel.findOne({ email });
-  console.log(
-    cart.map((value) => {
-      return value;
-    })
-  );
   if (existingUser) {
     existingUser.cart = cart;
     existingUser.save();
