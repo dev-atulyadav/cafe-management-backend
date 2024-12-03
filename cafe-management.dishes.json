@@ -1,0 +1,198 @@
+[{
+  "_id": {
+    "$oid": "67350d911571f27e30b172c5"
+  },
+  "name": "Hyderabadi Chicken Biryani",
+  "price": 200,
+  "category": "top-rated",
+  "image": "https://charminarhotel.com/wp-content/uploads/2024/07/Untitled-design-9.jpg",
+  "description": "An aromatic blend of spices and flavors that will transport you to Hyderabad.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67350ed71571f27e30b172df"
+  },
+  "name": "Paneer Butter Masala",
+  "price": 350,
+  "category": "top-rated",
+  "image": "https://b.zmtcdn.com/data/pictures/chains/9/21062439/9a65906e09943ce49c876dbe7509af86.jpeg",
+  "description": "Creamy and delicious paneer curry that's perfect with naan or rice.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67350faa1571f27e30b172e5"
+  },
+  "name": "Chicken Chettinad",
+  "price": 250,
+  "category": "top-rated",
+  "image": "https://www.scrumptiously.com/wp-content/uploads/2024/06/ChickenTawa.webp",
+  "description": "Spicy and flavorful chicken dish from Tamil Nadu",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673515911571f27e30b17360"
+  },
+  "name": "Butter Chicken",
+  "price": 250,
+  "category": "non-veg",
+  "image": "https://c.ndtvimg.com/2023-09/l3fskaqg_butter-chicken_625x300_20_September_23.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350",
+  "description": "Creamy, rich, and flavorful chicken cooked in a spiced tomato gravy",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673516411571f27e30b17366"
+  },
+  "name": "Chole Bhature",
+  "price": 180,
+  "category": "veg",
+  "image": "https://sitaramdiwanchand.com/blog/wp-content/uploads/2024/04/Image-1-4-1024x576.webp",
+  "description": "Spicy chickpeas served with fluffy deep-fried bread.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673516d41571f27e30b1736d"
+  },
+  "name": "Samosa",
+  "price": 50,
+  "category": "veg",
+  "image": "https://b.zmtcdn.com/data/pictures/chains/7/21327347/5a81a9a305f1f4f802a6ecd1c1989159.jpg?output-format=webp",
+  "description": "Crispy pastry filled with spiced potatoes and peas.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351780398b810f649bd03b"
+  },
+  "name": "Bread Pakora",
+  "price": 70,
+  "category": "veg",
+  "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzA1pvJbd6QqFcJwnnG9EDX-TevJwtPRyaXPat_DgR8boOI1FG",
+  "description": "Savory bread fritters stuffed with spiced potatoes.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351849398b810f649bd03f"
+  },
+  "name": "Paneer Tikka",
+  "price": 220,
+  "category": "veg",
+  "image": "https://img.freepik.com/premium-photo/paneer-tikka-is-indian-dish-made-from-chunks-cottage-cheese-marinated-spices_960396-612008.jpg?w=900",
+  "description": "Grilled cottage cheese marinated in spices.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673518d4398b810f649bd041"
+  },
+  "name": "Daal Makhni",
+  "price": 160,
+  "category": "veg",
+  "image": "https://img.freepik.com/premium-photo/indian-dish-lentils-daal-curry_988987-26006.jpg?w=740",
+  "description": "Creamy black lentils slow-cooked with spices.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6735194a398b810f649bd043"
+  },
+  "name": "Palak Paneer",
+  "price": 190,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/top-view-pakistani-food-arrangement_23-2148825109.jpg?t=st=1731533091~exp=1731536691~hmac=7129abde19cc9512471e360d6a9719dedf80ebbb5fa58bc7075ca4a7b94f57ef&w=900",
+  "description": "Spinach and cottage cheese cooked with spice.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351991398b810f649bd045"
+  },
+  "name": "Veg Biryani",
+  "price": 200,
+  "category": "veg",
+  "image": "https://img.freepik.com/premium-photo/indian-vegetable-pulav-biryani-made-using-basmati-rice-served-terracotta-bowl-selective-focus_466689-55570.jpg?w=900",
+  "description": "Fragrant rice dish cooked with mixed vegetables and spices.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351a2e398b810f649bd047"
+  },
+  "name": "Chicken Biryani",
+  "price": 300,
+  "category": "non-veg",
+  "image": "https://img.freepik.com/free-photo/high-angle-pakistan-meal-composition_23-2148821517.jpg?t=st=1731533305~exp=1731536905~hmac=5ebd12c63a90d2722ccbd9c99b9212f0816e860b68e6ee6035bf8c7bf55c7355&w=900",
+  "description": "Aromatic rice cooked with chicken and spices.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351ab7398b810f649bd049"
+  },
+  "name": "Rajma Chawal",
+  "price": 150,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/view-classic-tomato-soup-with-spoon-blue-bowl-wooden-tray-beans-garlic-onion-tomato-lemon-mixed-color-table_140725-86492.jpg?t=st=1731533477~exp=1731537077~hmac=56e8097d696dfae352de55e73d3fe56bece1c4281422d55becc7dad6d629690d&w=900",
+  "description": "Red kidney beans served with steamed rice.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351af7398b810f649bd04b"
+  },
+  "name": "Poori Sabzi",
+  "price": 120,
+  "category": "veg",
+  "image": "https://img.freepik.com/premium-photo/puri-bhaji-indian-semi-dry-potato-spicy-recipe-also-known-as-batata-aloo-ki-sabji-served-with-fried-poori-selective-focus_466689-12792.jpg?w=900",
+  "description": "Fried bread served with a spiced potato curry.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351b3a398b810f649bd04d"
+  },
+  "name": "Momos",
+  "price": 90,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/side-view-traditional-asian-dumplings-with-meat-vegetables-served-with-soy-sauce-plate-rustic_141793-11562.jpg?t=st=1731533601~exp=1731537201~hmac=cd59190ea33cfebd82e5967d8e744adffe767419d1ac2c5f851b461963dd106a&w=900",
+  "description": "Steamed dumplings filled with vegetables , paneer , soya any many more.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351b73398b810f649bd04f"
+  },
+  "name": "Lassi",
+  "price": 60,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/ayran-drink-with-mint-cucumber-glass-wooden-table_123827-22326.jpg?t=st=1731533667~exp=1731537267~hmac=b616442592fa5a3305bb77fb228efda55e2a8c130dccb0bcd985a4807f37428c&w=900",
+  "description": "Refreshing yogurt-based drink, sweet or salty with special rose touch.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351bb6398b810f649bd051"
+  },
+  "name": "Gulab Jamun",
+  "price": 70,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/delicious-indian-dessert-view_23-2149312365.jpg?t=st=1731533732~exp=1731537332~hmac=1a01eccce349c22cab23486ccde1f6d93bbdc05eb90fb2d686f15a95a9938692&w=900",
+  "description": "Sweet syrup-soaked dough balls.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67351c04398b810f649bd053"
+  },
+  "name": "Singapori Chowmin",
+  "price": 180,
+  "category": "veg",
+  "image": "https://img.freepik.com/free-photo/flat-lay-tasty-composition-noodles-table_23-2148803863.jpg?t=st=1731533807~exp=1731537407~hmac=66714d455bbaa1e8c620aad6f83feebf40e9f178a7fc866f05f7cce42049eb83&w=900",
+  "description": "Delicious stir-fried noodles tossed with shrimp, colorful vegetables, and a spicy, tangy sauce blend.",
+  "__v": 0
+}]
